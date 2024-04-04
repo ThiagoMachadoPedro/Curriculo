@@ -25,7 +25,7 @@ body {
 
 .card {
   background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(19px);
   border-radius: 20px;
   margin: 20px 0;
   padding: 20px;
@@ -33,7 +33,7 @@ body {
 }
 
 a {
-  color: #fff;
+  color: #c13c3c;
   text-decoration: none;
 }
 
@@ -41,7 +41,6 @@ a:hover {
   color: gold;
 }
 
-/* Estilos do cabeçalho */
 header {
   width: 100%;
   padding: 10px 0;
@@ -50,10 +49,8 @@ header {
 header .card {
   display: flex;
   flex-direction: column;
-  /* Altera a direção para coluna em dispositivos pequenos */
   align-items: center;
   text-align: center;
-  /* Centraliza o texto */
 }
 
 header img {
@@ -61,27 +58,26 @@ header img {
   width: 180px;
   border-radius: 50px;
   margin-bottom: 20px;
-  /* Espaçamento entre a imagem e o texto */
   animation: float 2s ease-in-out infinite;
 }
 
 header .container {
   flex: 1;
-  /* Ocupa todo o espaço disponível */
+
 }
 
 header nav ul {
   display: flex;
   list-style-type: none;
   justify-content: center;
-  /* Centraliza os links */
+
 }
 
 header nav ul li {
   margin-right: 10px;
 }
 
-/* Estilos do conteúdo */
+
 section {
   width: 100%;
   text-align: left;
@@ -104,21 +100,29 @@ header nav ul li {
   padding: 10px;
 }
 
+section#conteudo .container p {
+  margin-bottom: 10px;
+  line-height: 2.5;
+}
+
+
 footer {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 20px;
-  margin: 20px 0;
-  padding: 20px;
   text-align: center;
 }
 
 footer .container {
   display: flex;
-  justify-content: space-between;
-  /* Alinha os elementos lado a lado */
+  flex-direction: column;
   align-items: center;
+  padding: 20px;
+}
+
+footer h3 {
+  margin-bottom: 10px;
 }
 
 footer .social-link {
